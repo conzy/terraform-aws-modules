@@ -1,2 +1,0 @@
-# HCL Code here. You may want to split the implementation into logical files or move repeated HCL into a sub module.
-# Do NOT include a provider in the module. The provider should only exist in root modules.
