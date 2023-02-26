@@ -23,7 +23,6 @@ resource "aws_guardduty_organization_configuration" "this" {
       audit_logs {
         enable = false
       }
-
     }
   }
 }
@@ -51,4 +50,10 @@ resource "aws_securityhub_member" "members" {
   lifecycle {
     ignore_changes = [email, invite]
   }
+}
+
+# Config Aggregator
+
+module "config_aggregator" {
+  source = "../config_aggregator"
 }

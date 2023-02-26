@@ -5,5 +5,6 @@ Helper module to keep things DRY. Deploys security services and components in th
 - Cloudtrail Bucket
 - Cloudtrail S3 Logging Bucket
 - Config Bucket
+- Config Aggregator
 - Security Hub 
 - GuardDuty
