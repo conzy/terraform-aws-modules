@@ -13,3 +13,9 @@ variable "custom_role_policy_arns" {
   description = "A list of policies to attach to the terraform role. We default to admin for demo purposes."
   default     = ["arn:aws:iam::aws:policy/AdministratorAccess"]
 }
+
+variable "config_bucket_name" {
+  type        = string
+  description = "The AWS Config bucket in a centralised account."
+  default     = ""
+}

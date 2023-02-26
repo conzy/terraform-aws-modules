@@ -21,3 +21,9 @@ module "terraform_role" {
   role_requires_mfa       = false
   custom_role_policy_arns = var.custom_role_policy_arns
 }
+
+module "config" {
+  count              = var.config_bucket_name == "" ? 0 : 1
+  source             = "../config_org"
+  config_bucket_name = var.config_bucket_name
+}
